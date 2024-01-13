@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.Calculator {
+  background-color: #505050;
+  color: white;
+  width: 300px;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding: 15px;
+}
+
+.history {
+  max-height: 150px;
+  font-size: 23px;
+  min-width: 25%;
+  max-width: 25%;
+  overflow-y: scroll;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.history::-webkit-scrollbar {
+  display: none;
+}
+
+.results {
+  font-size: 46px;
+  max-width: 70%;
+  overflow-x: scroll;
+  display: flex;
+  align-items: end;
+}
+
+.results::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 30px 15px 15px 15px;
+}
+
+.left {
+  display: flex;
+  column-gap: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #a5a5a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.lastrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastrow button {
+  border-radius: 40px;
+  width: 130px;
+}
+
+#support {
+  background-color: #876141;
+}
+
+#operators {
+  background-color: #ffa00a;
+}
